@@ -125,5 +125,16 @@ MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4
 - `pydub`
 - `python-dotenv`
 
-## Author
-Developed by Matin. Reach out for inquiries or collaborations!
+## 📜 License
+This project is **open-source** under the **MIT License**. Feel free to use, modify, and distribute it.
+
+## 🤝 Contributing
+If you want to improve the project:
+1. **Fork the repository**
+2. **Make changes in a new branch**
+3. **Submit a pull request**
+
+## 📬 Contact
+- **Author:** Matin
+- **GitHub:** [Matin-Ar](https://github.com/Matin-Ar)
+- **VR MAI Robot Repo:** [VR-MAI-Robot](https://github.com/Matin-Ar/VR-MAI-Robot)
