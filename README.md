@@ -1,52 +1,52 @@
-# MAI - AI-powered Educational Assistant
+# 🤖 MAI - AI-powered Educational Assistant
 
-## Overview
+## 📝 Overview
 MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4. It integrates Retrieval-Augmented Generation (RAG) for knowledge retrieval, speech-to-text conversion using OpenAI's Whisper, and text-to-speech synthesis for audio responses. Additionally, MAI supports audio re-encoding to ensure compatibility with Unity and other applications.
 
-## Features
-- **Retrieval-Augmented Generation (RAG):** Enhances chatbot responses by retrieving relevant knowledge base documents using FAISS.
-- **OpenAI GPT-4 Integration:** Provides intelligent responses based on user queries.
-- **Speech-to-Text (STT):** Converts spoken words to text using OpenAI's Whisper model.
-- **Text-to-Speech (TTS):** Converts text responses to high-quality WAV audio output.
-- **Speech-to-Speech (S2S):** Enables end-to-end voice interaction by processing user speech and responding with generated audio.
-- **Persistent Chat History:** Logs user queries and responses for analysis.
-- **User Data Management:** Stores user interactions for improved personalization (optional).
+## 🚀 Features
+- **🔍 Retrieval-Augmented Generation (RAG):** Enhances chatbot responses by retrieving relevant knowledge base documents using FAISS.
+- **🧠 OpenAI GPT-4 Integration:** Provides intelligent responses based on user queries.
+- **🎙️ Speech-to-Text (STT):** Converts spoken words to text using OpenAI's Whisper model.
+- **🔊 Text-to-Speech (TTS):** Converts text responses to high-quality WAV audio output.
+- **🗣️ Speech-to-Speech (S2S):** Enables end-to-end voice interaction by processing user speech and responding with generated audio.
+- **📜 Persistent Chat History:** Logs user queries and responses for analysis.
+- **🗂️ User Data Management:** Stores user interactions for improved personalization (optional).
 
-## Installation
-### Prerequisites
-- Python 3.8+
-- Virtual environment (optional but recommended)
+## 🛠️ Installation
+### 📌 Prerequisites
+- 🐍 Python 3.8+
+- 🏗️ Virtual environment (optional but recommended)
 
 ### Setup
-1. Clone the repository:
+1️⃣ Clone the repository:
    ```sh
-   git clone [<repository_url>](https://github.com/Matin-Ar/MAI-Robot.git)
+   git clone https://github.com/Matin-Ar/MAI-Robot.git
    cd MAI-Robot
    ```
 
-2. Create and activate a virtual environment:
+2️⃣ Create and activate a virtual environment:
    ```sh
    python -m venv venv
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
    ```
 
-3. Install dependencies:
+3️⃣ Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
 
-4. Create a `.env` file and set your OpenAI API key:
+4️⃣ Create a `.env` file and set your OpenAI API key:
    ```sh
    echo "OPENAI_API_KEY=your-api-key-here" > .env
    ```
 
-5. Run the application:
+5️⃣ Run the application:
    ```sh
    uvicorn MAI:app --host 0.0.0.0 --port 8000
    ```
 
-## API Endpoints
-### 1. Speech-to-Text (STT)
+## 🌍 API Endpoints
+### 1️⃣ Speech-to-Text (STT)
 - **Endpoint:** `POST /speech-to-text`
 - **Description:** Converts speech from an audio file to text.
 - **Request Body:**
@@ -61,7 +61,7 @@ MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4
   {"text": "Transcribed text"}
   ```
 
-### 2. Text-to-Speech (TTS)
+### 2️⃣ Text-to-Speech (TTS)
 - **Endpoint:** `POST /text-to-speech`
 - **Description:** Converts text to speech and returns the audio file path.
 - **Request Body:**
@@ -73,7 +73,7 @@ MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4
   {"audio_file": "path/to/output.wav"}
   ```
 
-### 3. Generate Response
+### 3️⃣ Generate Response
 - **Endpoint:** `POST /generate-response`
 - **Description:** Generates a response using OpenAI GPT with RAG.
 - **Request Body:**
@@ -85,7 +85,7 @@ MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4
   {"response": "AI stands for Artificial Intelligence..."}
   ```
 
-### 4. Speech-to-Speech
+### 4️⃣ Speech-to-Speech
 - **Endpoint:** `POST /speech-to-speech`
 - **Description:** Converts speech to text, generates a response, and converts it back to speech.
 - **Request Body:**
@@ -104,7 +104,7 @@ MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4
   }
   ```
 
-## File Structure
+## 📂 File Structure
 ```
 ├── documents/                 # Knowledge base documents
 │   ├── user_data.txt          # User interaction data (optional)
@@ -114,7 +114,7 @@ MAI is an AI-powered educational assistant built with FastAPI and OpenAI's GPT-4
 ├── .env                        # API key storage
 ```
 
-## Dependencies
+## 📦 Dependencies
 - `fastapi`
 - `uvicorn`
 - `openai`
